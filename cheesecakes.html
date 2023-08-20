@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> CheeseCakes-Chocolate Tiffin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      .logo{
+      border-radius: 23px;
+      border-radius: 60%;
+      }
+      .form-control:focus {
+        border-color: brown;
+        box-shadow: 0 0 0 0.1rem #410c0e; /* Add a subtle shadow effect */
+      }
+      .post{
+        position:sticky;
+      }
+    
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 18rem;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            height: 225px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+      .cards{
+        display:flex;
+        margin:10px;
+      /* padding:10px; */
+      }
+      #border{
+        border-radius: 25px;
+      }
+      h2{
+        color: #410c0e;
+        text-shadow: 2px 2px 4px rgb(98, 36, 36) ;
+      }
+      .dropdown-menu {
+      z-index: 9999;
+    }
+    #box {
+  background-color: #743A36;
+  color: white; /* Change text color to white (optional, adjust as needed) */
+  padding: 20px;
+ 
+}
+
+#posi {
+      position: sticky;
+      top: 0;
+      /* Stick to the top of the viewport */
+      z-index: 1000;
+      /* Ensure it's above other elements */
+    }
+
+      </style>
+</head>
+<body>
+    <body>
+      <div id="posi">
+        <nav class=" post navbar navbar-expand-lg bg-body-primary " style="background-color: #743A36;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img  class="logo" src="/logo.png" alt="Bootstrap" width="60" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="plz navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active"  aria-current="page" href="#" style="color:antiquewhite">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/contact.html" target=_blank style="color:antiquewhite">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cheesecakes.html" target=_blank style="color:antiquewhite">CheeseCakes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pinatacake.html" style="color:antiquewhite">Pinnata Cakes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:antiquewhite">
+                    Desserts
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="brownie.html">Brownies</a></li>
+                    <li><a class="dropdown-item" href="cupcake.html">Cupcakes</a></li>
+                    <li><a class="dropdown-item" href="donuts.html">Donuts</a></li>
+                    <li><a class="dropdown-item" href="muffin.html">Muffin</a></li>
+                    <li><a class="dropdown-item" href="mousse.html">Mousse</a></li>
+                  </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:antiquewhite">
+                      Savouries
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/patties.html">Patties</a></li>
+                      <li><a class="dropdown-item" href="/rolls.html">Rolls</a></li>
+                      <li><a class="dropdown-item" href="/burger.html">Burger</a></li>
+                      </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" style="color:antiquewhite">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input  class="form-control me-2" type="search" placeholder="Search Flavorsome"  aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        </nav>
+  <br>
+  <h3 style=" padding:10px;"> CheeseCakes</h3>
+  <h5 style=" padding:10px;">Love at first taste: our cheesecakes.</h5>
+  <div class="cards">
+    <div class="card cards" id="items" style="width: 18rem;">
+      <img id="border" src="/cheese1.jpg" class="card-img-top" alt="..." style="height:225px ;width:282px">
+      <div class="card-body " style="margin:5px;">
+        <h5 class="card-title">4 in 1 Baked Cheesecake </h5>
+        <p class="card-text">From Rs.800</p>
+        <div class="cent">
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+      </div>
+    </div>
+    <div class="card cards" style="width: 18rem;">
+      <img id="border" src="cheese2.webp" class="card-img-top" alt="..." style="height:225px ;width:287px">
+      <div class="card-body">
+        <h5 class="card-title">Blueberry Cheesecake</h5>
+        <p class="card-text">From Rs.600</p>
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+    </div>
+    <div class="card cards" style="width: 18rem;">
+      <img  id ="border" src="/cheese3.jpeg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+      <div class="card-body">
+        <h5 class="card-title">Lime Cheesecakes</h5>
+        <p class="card-text">From Rs.550</p>
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+    </div>
+    <div class="card cards" style="width: 18rem;">
+      <img id="border" src="/cheese4.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+      <div class="card-body">
+        <h5 class="card-title">Caramel Cheesecake</h5>
+        <p class="card-text">From Rs.600</p>
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="cards">
+        <div class="card cards" id="items" style="width: 18rem;">
+          <img id="border" src="/easter-egg-nutella-cheesecake.jpg" class="card-img-top" alt="..." style="height:225px ;width:282px">
+          <div class="card-body " style="margin:5px;">
+            <h5 class="card-title">Nutella cheesecake</h5>
+            <p class="card-text">From Rs.650</p>
+            <div class="cent">
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+          </div>
+        </div>
+        <div class="card cards" style="width: 18rem;">
+          <img id="border" src="Black forest cheesecake.jpg" class="card-img-top" alt="..." style="height:225px ;width:284px">
+          <div class="card-body">
+            <h5 class="card-title">Black Forest cheesecake</h5>
+            <p class="card-text">From Rs.600</p>
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+        </div>
+        <div class="card cards" style="width: 18rem;">
+          <img  id ="border" src="/strawberry cheesecake.jpeg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Cheesecakes</h5>
+            <p class="card-text">From Rs.550</p>
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+        </div>
+        <div class="card cards" style="width: 18rem;">
+          <img id="border" src="/oreo-cheesecake.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+          <div class="card-body">
+            <h5 class="card-title">Oreo Cheesecake</h5>
+            <p class="card-text">From Rs.700</p>
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+          </div>
+        </div>
+
+        <div id="box">
+          <div class="footer__content-top page-width">
+            </li></ul></div><div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet "><div class="footer-block grid__item footer-block--menu"><ul class="footer-block__details-content list-unstyled"><li>
+                                    <a href="/pages/faqs" class="link link--text list-menu__item list-menu__item--link">
+                                      FAQ
+                                    </a>
+                                  </li><li>
+                                    <a href="/policies/privacy-policy" class="link link--text list-menu__item list-menu__item--link">
+                                      Privacy Policy
+                                    </a>
+                                  </li><li>
+                                    <a href="/policies/refund-policy" class="link link--text list-menu__item list-menu__item--link">
+                                      Refund Policy
+                                    </a>
+                                  </li><li>
+                                    <a href="/policies/shipping-policy" class="link link--text list-menu__item list-menu__item--link">
+                                      Shipping Policy
+                                    </a>
+                                  </li><li>
+                                    <a href="/policies/terms-of-service" class="link link--text list-menu__item list-menu__item--link">
+                                      Terms and Conditions
+                                    </a>
+                                  </li><li>
+                                    <a href="/pages/contact" class="link link--text list-menu__item list-menu__item--link">
+                                      Contact Us
+                                    </a>
+                                  </li><li>
+                                    <a href="/pages/about-us" class="link link--text list-menu__item list-menu__item--link">
+                                      About Us
+                                    </a>
+                                  </li></ul></div><div class="footer-block grid__item"><h2 class="footer-block__heading">Address</h2><div class="footer-block__details-content rte">
+                              <ul><li>Chocolate Tiffin-sweetness on the inside</li></ul><p>Shop No.06 Jay Ambe Bhuvan Near Sai Ground Vasi(w)</li></ul>
+                            </div></div><div class="footer-block grid__item"><h2 class="footer-block__heading">Contact</h2><div class="footer-block__details-content rte">
+                              <p></p><ul><li>+91 8010126446</li><li>chocolateTiffin123@gmail.com</li></ul>
+                            </div></div></div></div>
+                          </div>
+         
+                            
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"></script>
+</body>
+</html>

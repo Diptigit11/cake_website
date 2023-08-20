@@ -1,0 +1,13 @@
+<h3 style=" padding:10px;"> Brownie</h3>
+  <h5 style=" padding:10px;">Brownies: a hug for your taste buds.</h5>
+  <div class="cards">
+    <div class="card cards" id="items" style="width: 18rem;">
+      <img id="border" src="/Chewy-Brownies.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+      <div class="card-body " style="margin:5px;">
+        <h5 class="card-title">Fudge Brownies</h5>
+        <p class="card-text">From Rs.800</p>
+        <div class="cent">
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+      </div>
+    </div>

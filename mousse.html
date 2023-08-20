@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Mousse:Chocolate Tiffin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    .logo {
+      border-radius: 23px;
+      border-radius: 60%;
+    }
+
+    .form-control:focus {
+      border-color: brown;
+      box-shadow: 0 0 0 0.1rem #410c0e;
+      /* Add a subtle shadow effect */
+    }
+
+    .post {
+      position: sticky;
+    }
+    .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 18rem;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            height: 225px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+
+        body {
+    background: #fbfbfd;
+}
+
+.new_footer_area {
+    background: #fbfbfd;
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    /* background:url(bg\ image\ road.png); */
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+
+
+    .cards {
+      display: flex;
+      margin: 10px;
+      /* padding:10px; */
+    }
+
+    #border {
+      border-radius: 25px;
+    }
+
+    h2 {
+      color: #410c0e;
+      text-shadow: 2px 2px 4px rgb(98, 36, 36);
+    }
+
+    .dropdown-menu {
+      z-index: 9999;
+    }
+
+    /* Add this CSS code to change the footer color to brown */
+    #box {
+      background-color: #743A36;
+      color: white;
+      /* Change text color to white (optional, adjust as needed) */
+      padding: 20px;
+    }
+
+    #posi {
+      position: sticky;
+      top: 0;
+      /* Stick to the top of the viewport */
+      z-index: 1000;
+      /* Ensure it's above other elements */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="para">
+  <nav class=" post navbar navbar-expand-lg bg-body-primary " style="background-color: #743A36;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="/logo.png" alt="Bootstrap" width="60" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="plz navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html" style="color:antiquewhite">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact.html" target=_blank style="color:antiquewhite">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/cheesecakes.html" target=_blank style="color:antiquewhite">CheeseCakes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/pinatacake.html" target=_blank style="color:antiquewhite">Pinnata
+              Cakes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color:antiquewhite">
+              Desserts
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="/brownie.html" target="_blank">Brownies</a></li>
+              <li><a class="dropdown-item " href="/cupcake.html" target="_blank">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="donuts.html">Donuts</a></li>
+              <li><a class="dropdown-item" href="muffin.html">Muffin</a></li>
+              <li><a class="dropdown-item" href="mousse.html">Mousse</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color:antiquewhite">
+              Savouries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/patties.html">Patties</a></li>
+              <li><a class="dropdown-item" href="/rolls.html">Rolls</a></li>
+              <li><a class="dropdown-item" href="burger.html">Burger</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color:antiquewhite">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Flavorsome" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search </button>
+        </form>
+      </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <br>
+
+  <h3 style="margin:5px; padding:10px;"> Mousse:</h3>
+  <h5 style= " padding:10px;"> A spoonful of happiness</h5>
+  <div class="cards">
+    <div class="card cards" id="items" style="width: 18rem;">
+      <img id="border" src="/heavy cream.jpg" class="card-img-top" alt="..." style="height:260px ;width:287px">
+      <div class="card-body " style="margin:5px;">
+        <h5 class="card-title">Heavy Cream Mousse</h5>
+        <p class="card-text"> Rs.90</p>
+        <div class="cent">
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card cards" style="width: 18rem;">
+      <img id="border" src="/easy-chocolate-mousse-9.jpg" class="card-img-top" alt="..." style="height:260px ;width:287px">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Mousse</h5>
+        <p class="card-text"> Rs.120</p>
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+    </div>
+    <div class="card cards" style="width: 18rem;">
+      <img id="border" src="/Strawberry Mousse.jpg" class="card-img-top" alt="..." style="height:260px ;width:287px">
+      <div class="card-body">
+        <h5 class="card-title">Strawberry Mousse</h5>
+        <p class="card-text"> Rs. 100</p>
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+    </div>
+    <div class="card cards" style="width: 18rem;">
+      <img id="border" src="/Coffee Mousse.jpg" class="card-img-top" alt="..." style="height:260px ;width:287px">
+      <div class="card-body">
+        <h5 class="card-title">Coffee Mousse</h5>
+        <p class="card-text"> Rs.120</p>
+        <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Android App</a></li>
+                            <li><a href="#">ios App</a></li>
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">My tasks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Term &amp; conditions</a></li>
+                            <li><a href="#">Reporting</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-7">
+                    <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 col-sm-5 text-right">
+                    <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank">CakeCounter</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chocolate Tiffin-sweetness on the inside</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    .logo {
+      border-radius: 23px;
+      border-radius: 60%;
+    }
+
+    .form-control:focus {
+      border-color: brown;
+      box-shadow: 0 0 0 0.1rem #410c0e;
+      /* Add a subtle shadow effect */
+    }
+
+    .post {
+      position: sticky;
+    }
+    .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 18rem;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            height: 225px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+        .textcolor{
+          color:#743A36;
+          display: block;
+         
+        }
+
+
+    .cards {
+      display: flex;
+      margin: 10px;
+      /* padding:10px; */
+    }
+
+    #border {
+      border-radius: 25px;
+    }
+
+    h2 {
+      color: #410c0e;
+      text-shadow: 2px 2px 4px rgb(98, 36, 36);
+    }
+
+    .dropdown-menu {
+      z-index: 9999;
+    }
+
+    #posi {
+      position: sticky;
+      top: 0;
+      /* Stick to the top of the viewport */
+      z-index: 1000;
+      /* Ensure it's above other elements */
+    }
+    /* Add this CSS code to change the footer color to brown */
+    #box {
+      background-color: #743A36;
+      color: white;
+      /* Change text color to white (optional, adjust as needed) */
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="para">
+  <nav class=" post navbar navbar-expand-lg bg-body-primary " style="background-color: #743A36;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="/logo.png" alt="Bootstrap" width="60" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="plz navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html" style="color:antiquewhite">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact.html" target=_blank style="color:antiquewhite">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/cheesecakes.html" target=_blank style="color:antiquewhite">CheeseCakes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/pinatacake.html" target=_blank style="color:antiquewhite">Pinnata
+              Cakes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color:antiquewhite">
+              Desserts
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="/brownie.html" target="_blank">Brownies</a></li>
+              <li><a class="dropdown-item " href="/cupcake.html" target="_blank">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="donuts.html">Donuts</a></li>
+              <li><a class="dropdown-item" href="muffin.html">Muffin</a></li>
+              <li><a class="dropdown-item" href="mousse.html">Mousse</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color:antiquewhite">
+              Savouries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/patties.html">Patties</a></li>
+              <li><a class="dropdown-item" href="/rolls.html">Rolls</a></li>
+              <li><a class="dropdown-item" href="/burger.html">Burger</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color:antiquewhite">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Flavorsome" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search </button>
+        </form>
+      </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <br>
+
+  
+     <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+      
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1st carousel.webp" class="d-block" style="width: 1400px; height: 380px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="2nd carousel.jpg" class="d-block" style="width: 1400px; height: 380px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="3rdcarousel.webp" class="d-block" style="width: 1400px; height: 380px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="5th-carousel.jpg" class="d-block" style="width: 1400px; height: 380px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="6th carousel.jpg" class="d-block" style="width: 1400px; height: 380px;" alt="...">
+        </div>
+        
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <h3 style="margin:5px; padding:10px;"> Our Special Cakes</h3>
+    <div class="cards">
+      <div class="card cards" id="items" style="width: 18rem;">
+        <img id="border" src="/Belgium Cake.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body " style="margin:5px;">
+          <h5 class="card-title">Belgium Chocolate Cake</h5>
+          <p class="card-text">From Rs.400</p>
+          <div class="cent">
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/th.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Ferrero Rocher Cake</h5>
+          <p class="card-text">From Rs.450</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/Black-Forest-Cake.webp" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Black Forest Cake</h5>
+          <p class="card-text">From Rs. 350</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/Cheesecake.jpg" class="card-img-top" alt="..." style="height:225px ;width:280px">
+        <div class="card-body">
+          <h5 class="card-title">CheeseCake</h5>
+          <p class="card-text">From Rs.600</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:5px; padding:10px;"> Celebration Cakes</h3>
+    <div class="cards">
+      <div class="card cards" id="items" style="width: 18rem;">
+        <img id="border" src="/celebration-1.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body " style="margin:5px;">
+          <h5 class="card-title">Star Spring Cake</h5>
+          <p class="card-text">From Rs.450</p>
+          <div class="cent">
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="celebration-2.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Overload Cake</h5>
+          <p class="card-text">From Rs.600</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/celebration-3.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Fudge Brownie Cake</h5>
+          <p class="card-text">From Rs.500</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/celebration-4.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Rasmalai Cakes</h5>
+          <p class="card-text">From Rs.600</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:5px; padding:10px;"> Customized Cakes</h3>
+    <div class="cards">
+      <div class="card cards" id="items" style="width: 18rem;">
+        <img id="border" src="/him-1.webp" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body " style="margin:5px;">
+          <h5 class="card-title">Toast To Great Life </h5>
+          <p class="card-text">From Rs.1500</p>
+          <div class="cent">
+            <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="him-2.webp" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Groom Cake</h5>
+          <p class="card-text">From Rs.1200</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/him-4.jpg" class="card-img-top" alt="..." style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Car Cakes</h5>
+          <p class="card-text">From Rs.2000</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;">
+        <img id="border" src="/Customized-Flower-Cake-7.png" class="card-img-top" alt="..."
+          style="height:225px ;width:287px">
+        <div class="card-body">
+          <h5 class="card-title">Flower Cakes</h5>
+          <p class="card-text">From Rs.1500</p>
+          <a href="#" class="btn btn-outline-dark form-control me-2">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="textcolor">
+      <p style="margin-left:20px; padding:15px;">
+  ..Seeking for something special and customized ?</div><br><form class="textcolor"><div class="form-row submit-mobile"><div class="form-group col-md-6"><label id="inputEmail4">Your Name <span class="form-required">*</span></label><input type="text" name="name" class="form-control form-control-sm sizeFixed" id="inputYourName4" required=""></div><div class="form-group col-md-6"><label id="inputPasswordText">Phone Number <span class="form-required">*</span></label><input type="text" name="phone_number" class="form-control form-control-sm sizeFixed" id="inputPassword4" required="" maxlength="10"></div></div><div class="form-row"><div class="form-group col-md-12 position" style="width: 100%; margin-bottom: 15px;"><label id="inputYourNameEmail">Email <span class="form-required">*</span></label><input type="email" name="email" class="form-control form-control-sm sizeFixed" id="email" required=""></div></div><div class="form-row"><div class="form-group col-md-12 position" style="width: 100%; margin-bottom: 15px;"><label id="inputYourNameMessage">Message <span class="form-required">*</span></label><textarea maxlength="250" class="form-control message-sizeFixed" id="exampleFormControlTextarea1" name="message" rows="3" required=""></textarea></div></div><div data-testid="wrapper" class="_loading_overlay_wrapper css-79elbk"><input type="submit" class="submit-form" value="Submit form"></div></form></div></div></div>
+</p>
+  <br>
+
+    <div id="box">
+      <div class="footer__content-top page-width">
+        </li>
+        </ul>
+      </div>
+      <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet ">
+        <div class="footer-block grid__item footer-block--menu">
+          <ul class="footer-block__details-content list-unstyled">
+            <li>
+              <a href="/pages/faqs" class="link link--text list-menu__item list-menu__item--link">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="/policies/privacy-policy" class="link link--text list-menu__item list-menu__item--link">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="/policies/refund-policy" class="link link--text list-menu__item list-menu__item--link">
+                Refund Policy
+              </a>
+            </li>
+            <li>
+              <a href="/policies/shipping-policy" class="link link--text list-menu__item list-menu__item--link">
+                Shipping Policy
+              </a>
+            </li>
+            <li>
+              <a href="/policies/terms-of-service" class="link link--text list-menu__item list-menu__item--link">
+                Terms and Conditions
+              </a>
+            </li>
+            <li>
+              <a href="/pages/contact" class="link link--text list-menu__item list-menu__item--link">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="/pages/about-us" class="link link--text list-menu__item list-menu__item--link">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-block grid__item">
+          <h2 class="footer-block__heading">Address</h2>
+          <div class="footer-block__details-content rte">
+            <ul>
+              <li>Chocolate Tiffin-sweetness on the inside</li>
+            </ul>
+            <p>Shop No.06 Jay Ambe Bhuvan Near Sai Ground Vasi(w)</li>
+              </ul>
+          </div>
+        </div>
+        <div class="footer-block grid__item">
+          <h2 class="footer-block__heading">Contact</h2>
+          <div class="footer-block__details-content rte">
+            <p></p>
+            <ul>
+              <li>+91 8010126446</li>
+              <li>chocolateTiffin123@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

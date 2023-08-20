@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    .logo {
+      border-radius: 23px;
+      border-radius: 60%;
+    }
+.trying {
+      color: #743A36;
+    }
+  .table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #743A36;
+  }
+
+  .table th {
+    background-color: #a35f5b;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: #743A36;
+  }
+
+  .table tr:hover {
+    background-color: #743A36;
+  }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .social-icon:hover {
+            background-color: #555;
+        }
+        .iconss{
+          display:flex;
+justify-content: center;
+align-items: center;
+        }
+
+
+
+
+
+ .images {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+    #posi {
+      position: sticky;
+      top: 0;
+      /* Stick to the top of the viewport */
+      z-index: 1000;
+      /* Ensure it's above other elements */
+    }
+ .form-control:focus {
+      border-color: brown;
+      box-shadow: 0 0 0 0.1rem #410c0e;
+      /* Add a subtle shadow effect */
+    }
+.post {
+      position: sticky;
+    }
+.cards {
+      display: flex;
+      margin: 10px;
+      /* padding:10px; */
+    }
+ #border {
+      border-radius: 25px;
+    }
+h2 {
+      color: #410c0e;
+      text-shadow: 2px 2px 4px rgb(98, 36, 36);
+    }
+/* Apply styles to the container of the blog tiles */
+    .footer-blogs-cont {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Apply styles to each blog tile */
+    .footer-blog-tile {
+      flex: 1;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border: 3px solid #743A36;
+      border-radius: 10%;
+    }
+
+    /* Apply styles to the blog images */
+    .footer-blog-img img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Apply styles to the blog text content */
+    .footer-blog-textCont {
+      padding: 10px;
+    }
+
+    /* Apply styles to the blog titles */
+    .titletext-cont {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .containeer {
+    display: flex;
+    color: #743A36;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.map {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.address {
+    flex: 1;
+    font-size: 16px;
+}
+ /* Apply styles to the blog subtext */
+    .subtext-cont {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    /* Apply styles to the "Keep Reading" link */
+    .read-cont {
+      display: inline-block;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+
+    .dropdown-menu {
+      z-index: 9999;
+    }
+
+    /* Add this CSS code to change the footer color to brown */
+    #box {
+      background-color: #743A36;
+      color: white;
+      /* Change text color to white (optional, adjust as needed) */
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="posi">
+    <nav class=" post navbar navbar-expand-lg bg-body-primary  " style="background-color: #743A36;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="/logo.png" alt="Bootstrap" width="60" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="plz navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html" style="color:antiquewhite">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact.html" target=_blank style="color:antiquewhite">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/cheesecakes.html" target=_blank
+                style="color:antiquewhite">CheeseCakes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pinatacake.html" target=_blank style="color:antiquewhite">Pinnata
+                Cakes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color:antiquewhite">
+                Desserts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="/brownie.html" target="_blank">Brownies</a></li>
+                <li><a class="dropdown-item " href="/cupcake.html" target="_blank">Cupcakes</a></li>
+                <li><a class="dropdown-item" href="donuts.html">Donuts</a></li>
+                <li><a class="dropdown-item" href="muffin.html">Muffin</a></li>
+                <li><a class="dropdown-item" href="mousse.html">Mousse</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color:antiquewhite">
+                Savouries
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/patties.html">Patties</a></li>
+                <li><a class="dropdown-item" href="/rolls.html">Rolls</a></li>
+                <li><a class="dropdown-item" href="burger.html">Burger</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Flavorsome" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search </button>
+          </form>
+        </div>
+      </div>
+  </div>
+  </nav>
+  <br>
+<div class="about">
+    <img src="logo.png" alt="logo" style="float: left; margin-right: 10px;">
+    <div style="overflow: hidden;">
+      <h2 style="color: #743A36; ">Welcome to Chocolate Tiffin Cake Shop!</h2>
+      <br>
+      <p style="color:  #743A36;">We're a cozy bakery that loves making tasty treats. Our owner Gaurav Singh is a baking
+        enthusiast who believes in the power of chocolate to make days better.
+        Our cakes are soft, gooey, and filled with happiness. We use top-notch ingredients to ensure each bite is
+        amazing. And we're not just about cakes but also our shop has pastry,donutsand brownies that are pure bliss.</p>
+      <p>We know life is busy, so we make things easy. Grab a treat to go or enjoy it here.
+        Join us at Chocolate Tiffin Cake Shop for a delightful dessert experience that'll bring a smile to your face.
+      </p>
+      <b class="trying">The Chocolate Tiffin Cake Shop Team😊</b>
+    </div>
+  </div>
+
+  <p style="padding:20px"></p>
+
+  <section
+    class="elementor-section elementor-top-section elementor-element elementor-element-aeeaf88 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="aeeaf88" data-element_type="section"
+    data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+    style="width: 925px; left: -40px;">
+    <div class="elementor-container elementor-column-gap-default">
+      <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a9e0123"
+        data-id="a9e0123" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-0193860 elementor-widget elementor-widget-heading"
+            data-id="0193860" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container" style="text-align: center;">
+              <h2 class="elementor-heading-title elementor-size-default" style="margin: 0 auto; color: #743A36;">
+                  <span> ✨ Our Specialities ✨</span>
+              </h2>
+          </div>
+          
+            </div>
+          </div>
+        </div>
+        </style>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <div class="section-info-v2 mt-lg-5 ">
+    <div class="container container-v2">
+      <div class="text-center">
+
+        <div class="title_heading">Food of The Gods, Freshly Baked!</div>
+        <div class="info-v1-des mt-4"> We've been serving our guests the best quality treats, traditionally <br>made and
+          presented with care.</div>
+
+      </div>
+      <div class="row mini-content">
+        <div
+          class="col-lg-4 col-12 order-lg-1 order-2 order-md-2 col-md-6 text-lg-left text-md-center pt-lg-5 text-center">
+          <div class="mini-title">
+
+            <img src="" alt loading="lazy">
+            <h4 style="color: #743A36; "> AUTHENTIC RECIPES </h4>
+          </div>
+          <div class="mini-des">
+            Our treats are created the traditional way, with simple recipes and real ingredients. No added chemicals or
+            preservatives – just pure goodness.
+          </div>
+          <br>
+          <br>
+          <div class="mini-title">
+
+            <img src="" alt loading="lazy">
+            <h4 style="color: #743A36; "> BAKED WITH LOVE</h4>
+          </div>
+          <div class="mini-des">
+            We put love into every batch we bake. Our recipes are like edible happiness, guaranteed to put a smile on
+            your face.
+          </div>
+        </div>
+        <div class="col-lg-4 order-md-1 order-1 order-lg-2 col-md-12 text-md-center col-12 pb-4  pb-lg-0">
+          <a href="" class="adv-thumb-link">
+
+            <img class="images"
+              src="https://img.freepik.com/free-vector/bakery-shop-design-concept_1284-18159.jpg?w=740&t=st=1691938252~exp=1691938852~hmac=3c9ee073b986b9d80a0f10ca6cc178e9a2513e5e83283ea0b92bc41bf743e149 "
+              style="width: 450px; height: 470px;">
+          </a>
+        </div>
+        <div
+          class="col-lg-4 text-lg-right order-md-3 order-3 order-lg-3 col-md-6 text-md-center pt-lg-5 col-12 text-center">
+          <div class="mini-title" style="margin-left: 135px;">
+            <img class="pl-3" src="" alt loading="lazy">
+            <h4 style="color: #743A36; ">COMMITTED TO QUALITY</h4>
+
+          </div>
+          <div class="mini-des" style="margin-left: 130px;">
+            Quality is our priority. Whether it's the ingredients, our kitchen, or how we treat our guests, excellence
+            is what we deliver.
+          </div>
+          <br>
+          <div class="mini-title" style="margin-left: 150px;">
+ <img class="pl-3" src="" alt loading="lazy">
+            <h4 style="color: #743A36; ">HONESTLY PRICED</h4>
+          </div>
+
+
+
+          <div class="mini-des" style="margin-left: 150px;">
+            We constantly strive to offer the best <br>products at the right prices.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-left:40px; padding:15px;color: #743A36; ">Let customers speak for us</h3>
+  <div class="footer-blogs-cont three-blog">
+    <div class="footer-blog-tile">
+      <div class="footer-blog-textCont">
+        <div class="tag-date-cont">
+          <span class="blog-tag"></span>
+          <span class="blog-date"></span>
+        </div>
+        <div class="titletext-cont">
+          Sapna Pujari⭐⭐⭐⭐⭐
+        </div>
+        <div class="subtext-cont">
+          Variety of cake options available ❤some of the flavours are quiet new in the locality as well👌, the taste is
+          absolutely delectable 😊.
+        </div>
+      </div>
+    </div>
+    <div class="footer-blog-tile">
+
+      <div class="footer-blog-textCont">
+        <div class="tag-date-cont">
+          <span class="blog-tag"></span>
+          <span class="blog-date"></span>
+        </div>
+        <div class="titletext-cont">
+          MANISH yadav⭐⭐⭐⭐⭐
+        </div>
+        <div class="subtext-cont">
+          Hiii! Your cake was absolutely amazing. Taste also so good I am so happy that we went with the cake! It was
+          really very tasty full dark chocolate 😋
+
+          Thank you so much for making our vision real and wonderful!
+        </div>
+      </div>
+    </div>
+    <div class="footer-blog-tile">
+      <div class="footer-blog-textCont">
+        <div class="tag-date-cont">
+          <span class="blog-tag"></span>
+          <span class="blog-date"></span>
+        </div>
+        <div class="titletext-cont">
+          Deeepali Shah⭐⭐⭐⭐⭐
+        </div>
+        <div class="subtext-cont">
+          This cake is absolutely amazing 😍! Thank You Chocolate Tiffin</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="padding:5px"> </p>
+  <h5 style=" margin-left:40px; padding:15px;color: #743A36; ">Open Doors, Open Hours: Your Next Memory Awaits. See When We're Buzzing with Excitement!</h5>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Shop Timings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>9:30 AM -11:30 PM</td>
+      </tr>
+      <tr>
+        <td>Public Holidays</td>
+        <td>Hours Might Differ</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <h4 class="iconss" style="color: #743A36; margin:5px; padding:10px">Follow us on </h4>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/your_instagram_profile/" class="social-icon" target="_blank">
+        <!-- Replace the image source with your Instagram icon -->
+        <img src="insta-icon - Copy.jpg" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/your_facebook_profile/" class="social-icon" target="_blank">
+        <!-- Replace the image source with your Facebook icon -->
+        <img src="fb-icon.png" alt="Facebook">
+    </a>
+    <!-- Add more social media icons here as needed -->
+</div>
+  <h4 style="color: #743A36; margin:5px; padding:10px">Visit Our Store</h4>
+  <footer class="clear" id="footer">
+    <div class="containeer">
+        <div class="map-container">
+            <div class="map">
+              <div id="bordee">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.7143377327866!2d72.82444847508441!3d19.381517981887004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7afae35d0c8cd%3A0x41b5c9333d00da9f!2sChocolate%20Tiffin!5e0!3m2!1sen!2sin!4v1691954871493!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>  </div>
+            <div class="address">
+                <strong>Chocolate Tiffin: Sweetness on the inside.</strong><br>
+                SHOP NO 6, JAY AMBE BHUVAN CHS LTD, Sai Nagar, Vasai West, Vasai-Virar, Maharashtra 401202<br>
+                <i class="fa pright-10 fa-phone"></i> <strong> Tel:</strong><a href="tel:8010126446">8010126446</a>, <a href="tel:7767048988">7767048988</a><br>
+                <i class="fa pright-10 fa-envelope-o"></i><strong>E-Mail:</strong><a href="mailto:chocolatetiffin1@gmail.com">&nbsp; chocolatetiffin1@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <div class="elementor-element elementor-element-4a4c7d3 elementor-widget elementor-widget-spacer" data-id="4a4c7d3"
+    data-element_type="widget" data-widget_type="spacer.default">
+    <div class=center>
+      <div class="elementor-widget-container">
+        <div class="elementor-spacer">
+          <div class="elementor-spacer-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <br>
+  <div id="box">
+    <div class="footer__content-top page-width">
+      </li>
+      </ul>
+    </div>
+    <div class="footer-block grid__item">
+      <h2 class="footer-block__heading">Address</h2>
+      <div class="footer-block__details-content rte">
+        <ul>
+          <li>Chocolate Tiffin-sweetness on the inside</li>
+        </ul>
+        <p>Shop No.06 Jay Ambe Bhuvan Near Sai Ground Vasi(w)</li>
+          </ul>
+      </div>
+    </div>
+    <div class="footer-block grid__item">
+      <h2 class="footer-block__heading">Contact</h2>
+      <div class="footer-block__details-content rte">
+        <p></p>
+        <ul>
+          <li>+91 8010126446</li>
+          <li>chocolateTiffin123@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
